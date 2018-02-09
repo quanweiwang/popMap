@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D79BE9EA202BFA7300E073AD /* UZPopMap.m in Sources */ = {isa = PBXBuildFile; fileRef = D79BE9E9202BFA7300E073AD /* UZPopMap.m */; };
+		D79BE9EB202BFA7300E073AD /* UZPopMap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D79BE9E8202BFA7300E073AD /* UZPopMap.h */; };
+		D79BE9FA202C097200E073AD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79BE9F9202C097200E073AD /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D79BE9E3202BFA7300E073AD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D79BE9EB202BFA7300E073AD /* UZPopMap.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D79BE9E5202BFA7300E073AD /* libpopMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpopMap.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79BE9E8202BFA7300E073AD /* UZPopMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UZPopMap.h; sourceTree = "<group>"; };
+		D79BE9E9202BFA7300E073AD /* UZPopMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UZPopMap.m; sourceTree = "<group>"; };
+		D79BE9F2202BFAA400E073AD /* NSDictionaryUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDictionaryUtils.h; sourceTree = "<group>"; };
+		D79BE9F3202BFAA400E073AD /* UIViewControllerExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewControllerExtension.h; sourceTree = "<group>"; };
+		D79BE9F4202BFAA400E073AD /* UZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UZAppDelegate.h; sourceTree = "<group>"; };
+		D79BE9F5202BFAA400E073AD /* UZAppUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UZAppUtils.h; sourceTree = "<group>"; };
+		D79BE9F6202BFAA400E073AD /* UZModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UZModule.h; sourceTree = "<group>"; };
+		D79BE9F7202BFAA400E073AD /* UZURLTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UZURLTask.h; sourceTree = "<group>"; };
+		D79BE9F9202C097200E073AD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D79BE9E2202BFA7300E073AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79BE9FA202C097200E073AD /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D79BE9DC202BFA7300E073AD = {
+			isa = PBXGroup;
+			children = (
+				D79BE9E7202BFA7300E073AD /* popMap */,
+				D79BE9E6202BFA7300E073AD /* Products */,
+				D79BE9F8202C097200E073AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D79BE9E6202BFA7300E073AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D79BE9E5202BFA7300E073AD /* libpopMap.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D79BE9E7202BFA7300E073AD /* popMap */ = {
+			isa = PBXGroup;
+			children = (
+				D79BE9F1202BFAA400E073AD /* UZEngine */,
+				D79BE9E8202BFA7300E073AD /* UZPopMap.h */,
+				D79BE9E9202BFA7300E073AD /* UZPopMap.m */,
+			);
+			path = popMap;
+			sourceTree = "<group>";
+		};
+		D79BE9F1202BFAA400E073AD /* UZEngine */ = {
+			isa = PBXGroup;
+			children = (
+				D79BE9F2202BFAA400E073AD /* NSDictionaryUtils.h */,
+				D79BE9F3202BFAA400E073AD /* UIViewControllerExtension.h */,
+				D79BE9F4202BFAA400E073AD /* UZAppDelegate.h */,
+				D79BE9F5202BFAA400E073AD /* UZAppUtils.h */,
+				D79BE9F6202BFAA400E073AD /* UZModule.h */,
+				D79BE9F7202BFAA400E073AD /* UZURLTask.h */,
+			);
+			path = UZEngine;
+			sourceTree = "<group>";
+		};
+		D79BE9F8202C097200E073AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D79BE9F9202C097200E073AD /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D79BE9E4202BFA7300E073AD /* popMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D79BE9EE202BFA7300E073AD /* Build configuration list for PBXNativeTarget "popMap" */;
+			buildPhases = (
+				D79BE9E1202BFA7300E073AD /* Sources */,
+				D79BE9E2202BFA7300E073AD /* Frameworks */,
+				D79BE9E3202BFA7300E073AD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = popMap;
+			productName = popMap;
+			productReference = D79BE9E5202BFA7300E073AD /* libpopMap.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D79BE9DD202BFA7300E073AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "王权伟";
+				TargetAttributes = {
+					D79BE9E4202BFA7300E073AD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D79BE9E0202BFA7300E073AD /* Build configuration list for PBXProject "popMap" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D79BE9DC202BFA7300E073AD;
+			productRefGroup = D79BE9E6202BFA7300E073AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D79BE9E4202BFA7300E073AD /* popMap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D79BE9E1202BFA7300E073AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79BE9EA202BFA7300E073AD /* UZPopMap.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D79BE9EC202BFA7300E073AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D79BE9ED202BFA7300E073AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D79BE9EF202BFA7300E073AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89BZ957YW3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D79BE9F0202BFA7300E073AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89BZ957YW3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D79BE9E0202BFA7300E073AD /* Build configuration list for PBXProject "popMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79BE9EC202BFA7300E073AD /* Debug */,
+				D79BE9ED202BFA7300E073AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D79BE9EE202BFA7300E073AD /* Build configuration list for PBXNativeTarget "popMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79BE9EF202BFA7300E073AD /* Debug */,
+				D79BE9F0202BFA7300E073AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D79BE9DD202BFA7300E073AD /* Project object */;
+}
